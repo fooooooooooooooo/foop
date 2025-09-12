@@ -1,25 +1,49 @@
 {
-    "version": "9.99.0.3193.gfcf40deae2",
+    "version": "9.99.0.3202.g18b56539a6",
     "description": "Nightly build of KiCAD, an electronics design automation (EDA) suite.",
     "homepage": "https://kicad.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.kicad.org/kicad/windows/explore/nightlies/download/kicad-nightly-9.99.0.3193.gfcf40deae2-x86_64.exe#/dl.7z",
-            "hash": "72e3f047971d336e9db9dc6116efee31ad4c2953ed135cb042c6f7eebb1227cf"
+            "url": "https://downloads.kicad.org/kicad/windows/explore/nightlies/download/kicad-nightly-9.99.0.3202.g18b56539a6-x86_64.exe#/dl.7z",
+            "hash": "c1fcbbea422f3e927084957a8dd882affdcf0cdcfef9779d3a36611f7a0109f8"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\" -Recurse",
     "bin": "bin\\kicad-cli.exe",
     "shortcuts": [
-        ["bin\\kicad.exe", "KiCad"],
-        ["bin\\eeschema.exe", "Schematic Editor"],
-        ["bin\\pcbnew.exe", "PCB Editor"],
-        ["bin\\gerbview.exe", "Gerber Viewer"],
-        ["bin\\pcb_calculator.exe", "Calculator Tools"],
-        ["bin\\pl_editor.exe", "Drawing Sheet Editor"],
-        ["bin\\bitmap2component.exe", "Image Converter"],
-        ["bin\\kicad-cmd.bat", "KiCad Command Prompt"]
+        [
+            "bin\\kicad.exe",
+            "KiCad"
+        ],
+        [
+            "bin\\eeschema.exe",
+            "Schematic Editor"
+        ],
+        [
+            "bin\\pcbnew.exe",
+            "PCB Editor"
+        ],
+        [
+            "bin\\gerbview.exe",
+            "Gerber Viewer"
+        ],
+        [
+            "bin\\pcb_calculator.exe",
+            "Calculator Tools"
+        ],
+        [
+            "bin\\pl_editor.exe",
+            "Drawing Sheet Editor"
+        ],
+        [
+            "bin\\bitmap2component.exe",
+            "Image Converter"
+        ],
+        [
+            "bin\\kicad-cmd.bat",
+            "KiCad Command Prompt"
+        ]
     ],
     "checkver": {
         "url": "https://downloads.kicad.org/kicad/windows/explore/nightlies",
